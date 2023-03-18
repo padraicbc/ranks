@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ._toastContainer {
+    top: var(--toastContainerTop, 1.5rem);
+    right: var(--toastContainerRight, 2rem);
+    bottom: var(--toastContainerBottom, auto);
+    left: var(--toastContainerLeft, auto);
+    z-index: var(--toastContainerZIndex, 9999);
+  } */
+  .grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(10ch, auto));
+  }
