@@ -12,6 +12,5 @@ export const arrow = (r: string) => {
 
 export const keyup = (e: Event, search: Function) => {
 	const target = e.target as HTMLInputElement;
-	console.log(target);
 	debounce(target.value, (value: string) => search(value));
 };

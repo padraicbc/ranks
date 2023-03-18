@@ -3,7 +3,7 @@ export interface NFT {
 	img: string;
 	rank: number;
 	url: string;
-	attributes: [string, string][];
+	attributes: [string, string, number][];
 	// PRIMARY_BACKGROUND: string;
 	// GRAFFITI_TEXTURE: string;
 	// BOTTOM_BORDER: string;

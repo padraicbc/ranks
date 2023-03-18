@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  height: 100%;
+}
+
 /* ._toastContainer {
     top: var(--toastContainerTop, 1.5rem);
     right: var(--toastContainerRight, 2rem);
@@ -11,6 +15,12 @@
   } */
   .grid {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill, minmax(10ch, auto));
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+   
+  
+  }
+
+  .grid span{
+    overflow-wrap: normal
   }

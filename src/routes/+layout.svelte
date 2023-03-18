@@ -54,7 +54,7 @@
 	</div>
 </div>
 
-<div class="flex justify-center flex-wrap">
+<div class="flex overflow-y-auto  justify-center flex-wrap">
 	<div class="form-control w-full max-w-xs">
 		<!-- svelte-ignore a11y-label-has-associated-control -->
 		<label class="label">
