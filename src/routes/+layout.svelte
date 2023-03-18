@@ -64,7 +64,7 @@
 			type="text"
 			on:keyup={(e) => keyup(e, search)}
 			placeholder="Enter Token ID"
-			class="input input-bordered w-full max-w-xs"
+			class="input mb-4 input-bordered w-full max-w-xs"
 		/>
 	</div>
 </div>
@@ -72,7 +72,7 @@
 	{#if data?.length}
 		<Attrs attrs={selectedAttrs} />
 		{#each data as d}
-			<div class="card card-side bg-base-100 shadow-xl m-6">
+			<div class="card card-side bg-base-100 shadow-xl m-2">
 				<figure><img src={d.img} alt="NFT" /></figure>
 				<div class="card-body">
 					<h2 class="card-title">Rank: {d.rank}</h2>
