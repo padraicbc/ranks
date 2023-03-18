@@ -21,6 +21,12 @@
 
 	const search = (tid: string) => {
 		showOverlay.set(true);
+		if (tid == '') {
+			data = getNFTS();
+			slowFadeOut(500);
+			return;
+		}
+
 		data = getOne(parseInt(tid)) as NFT[];
 		slowFadeOut(500);
 	};
@@ -89,7 +95,6 @@
 			class="btn btn-outline"
 			disabled={!data?.length || data.length < limit}
 			on:click={() => {
-				console.log(page);
 				page++;
 			}}>Next</button
 		>

@@ -3,7 +3,6 @@ import type { NFT } from '../data/types';
 
 export const getNFTS = (page = 1, limit = 10) => {
 	const off = limit * (page - 1);
-	console.log(off, limit);
 	return (data as NFT[]).slice(off, off + limit);
 };
 
