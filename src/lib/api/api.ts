@@ -6,7 +6,11 @@ export const getNFTS = (page = 1, limit = 10) => {
 	return (data as NFT[]).slice(off, off + limit);
 };
 
-export const getOne = (id: number) => {
+export const getOne = (id: number | string) => {
 	const one = (data as NFT[]).find((n) => n.id == id);
 	return one ? [one] : [];
+};
+export const getOneFlat = (id: number | string) => {
+	const one = getOne(id);
+	return one ? one[0] : null;
 };
